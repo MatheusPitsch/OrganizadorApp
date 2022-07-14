@@ -1,20 +1,19 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'presenter/splash/splash.dart';
+import 'presenter/widgets/buttombar.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       title: "Organizador de Finanças",
-      home: Scaffold(
-        body: SplashPage(),
-      ),
+      home: SplashPage(),
       debugShowCheckedModeBanner: false,
     ),
   );
 }
+
+//https://pub.dev/packages/bottom_navy_bar/example
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,6 +22,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(),
+      bottomNavigationBar: const Buttombar(),
     );
   }
 }
