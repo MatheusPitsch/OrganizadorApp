@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class GraficoPage extends StatefulWidget {
-  const GraficoPage({Key? key}) : super(key: key);
+class GrapichPage extends StatefulWidget {
+  const GrapichPage({Key? key}) : super(key: key);
 
   @override
-  State<GraficoPage> createState() => _GraficoPageState();
+  State<GrapichPage> createState() => _GrapichPageState();
 }
 
-class _GraficoPageState extends State<GraficoPage> {
+class _GrapichPageState extends State<GrapichPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return SingleChildScrollView(
+      child: Column(
         children: [
           Container(
             height: 100,
             width: double.infinity,
-            color: Colors.black,
+            color: Colors.pink,
           ),
         ],
       ),
