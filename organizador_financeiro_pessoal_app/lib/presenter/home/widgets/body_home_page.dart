@@ -22,6 +22,7 @@ class BodyHomePage extends StatelessWidget {
               textLabel: "Valor",
               textHint: "R\$0.00",
               isNumber: true,
+              
             ),
             TextFildSpending(
               textLabel: "Produto",

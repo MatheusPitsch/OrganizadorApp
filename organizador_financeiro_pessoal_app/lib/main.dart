@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:organizador_financeiro_pessoal_app/presenter/home/homePage.dart';
 
-import 'presenter/splash/splash_page.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       title: "Organizador de Finanças",
-      home: SplashPage(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     ),
   );

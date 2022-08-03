@@ -1,6 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:moneytextformfield/moneytextformfield.dart';
 
 class TextFildSpending extends StatefulWidget {
   String textLabel;
@@ -32,6 +30,7 @@ class _TextFildSpendingState extends State<TextFildSpending> {
       child: Padding(
         padding: const EdgeInsets.only(left: 25, right: 25, top: 20),
         child: TextField(
+          inputFormatters: [],
           keyboardType: widget.isNumber
               ? TextInputType.number
               : TextInputType.streetAddress,
